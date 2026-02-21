@@ -26,17 +26,6 @@ const socials = [
     ),
     color: "hover:text-white",
   },
-  {
-    label: "X",
-    handle: "@RedFlagClub_SA",
-    url: "https://x.com/RedFlagClub_SA",
-    icon: (
-      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-      </svg>
-    ),
-    color: "hover:text-gray-300",
-  },
 ];
 
 export default function AboutSection() {
@@ -83,13 +72,29 @@ export default function AboutSection() {
               </svg>
               STALL LOCATION
             </h3>
-            <div className="bg-chocolate/5 rounded-xl p-4 mb-4 min-h-[120px] flex items-center justify-center">
-              <p className="font-body text-chocolate-light text-center">
-                Location details coming soon!
-                <br />
-                <span className="text-sm opacity-60">Follow us on socials for updates</span>
-              </p>
+            <div className="rounded-xl overflow-hidden mb-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.0!2d46.6!3d24.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1"
+                width="100%"
+                height="160"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-xl"
+              />
             </div>
+            <a
+              href="https://maps.app.goo.gl/wvUdy4teGKVcvrGG7?g_st=ipc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 font-heading text-sm text-redflag hover:text-redflag-dark tracking-wider transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              OPEN IN GOOGLE MAPS
+            </a>
           </motion.div>
 
           {/* Opening Times */}

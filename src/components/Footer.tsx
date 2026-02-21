@@ -18,7 +18,6 @@ export default function Footer() {
           {[
             { url: "https://instagram.com/RedFlagClub_SA", label: "Instagram" },
             { url: "https://tiktok.com/@RedFlagClub_SA", label: "TikTok" },
-            { url: "https://x.com/RedFlagClub_SA", label: "X" },
           ].map((s) => (
             <a
               key={s.label}
