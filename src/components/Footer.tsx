@@ -38,6 +38,20 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} The Red Flag Club. All rights reserved.
         </p>
       </div>
+
+      <div className="mt-8 pt-4 border-t border-grunge/10 text-center">
+        <p className="font-body text-[11px] text-grunge/25 tracking-wide">
+          Designed &amp; developed by{" "}
+          <span className="text-grunge/40 font-semibold">Zain</span>
+          {" "}&mdash;{" "}
+          <a
+            href="mailto:zainnottelling@gmail.com"
+            className="text-grunge/35 hover:text-warning transition-colors underline underline-offset-2"
+          >
+            zainnottelling@gmail.com
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
