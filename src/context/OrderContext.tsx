@@ -7,9 +7,9 @@ export type Flavor = "toxic-banana" | "red-flag-classic" | "mixed-signals";
 export type Topping = "oreo" | "lotus" | "coconut" | "nuts";
 
 const PRICES: Record<Size, number> = {
-  small: 18,
-  medium: 25,
-  large: 30,
+  small: 15,
+  medium: 22,
+  large: 25,
 };
 
 const TOPPING_PRICE = 3;
